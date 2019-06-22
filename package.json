@@ -4,14 +4,16 @@
   "description": "AF Project Back End",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon newServer.js"
   },
   "author": "Sahan",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "mongoose": "^5.5.3"
+    "mongoose": "^5.5.3",
+    "nodemailer": "^6.1.1"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",
