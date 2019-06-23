@@ -22,7 +22,13 @@ let User = new Schema({
     },
     user_pwd: {
         type: String
-    }
+    },
+    courses: [
+        {
+            type: mongoose.SchemaTypes.ObjectId,
+            ref: 'Course'
+        }
+    ]
 });
 
 module.exports = mongoose.model('User', User);
