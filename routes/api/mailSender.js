@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const credentials = require('../../credentials/Properties');
+// const credentials = require('../../credentials/Properties');
 module.exports = (app) => {
 
     //To send emails when once a new instructor is created.

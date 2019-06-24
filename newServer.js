@@ -8,10 +8,16 @@ const PORT = 4000;
 const server = require("repl");
 //Importing the user model schema
 
+const assignmentRouter = require('./routes/api/assignment.server.routes');
+const examRouter = require('./routes/api/exam.server.routes');
+
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/users', UserRoutes);
+
+app.use('/tns/assignmentUpload', assignmentRouter);
+app.use('/tns/examUpload', examRouter);
 
 mongoose.connect('mongodb://127.0.0.1:27017/tns', {useNewUrlParser: true})
     .then(() => {
