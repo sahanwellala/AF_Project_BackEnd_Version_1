@@ -34,7 +34,6 @@ require('./routes/api/mailSender')(app);
 require('./routes/api/CourseRoutes')(app);
 require('./routes/api/NoticeRoutes')(app);
 
-
 app.listen(PORT, function () {
     console.log("Server is Running on Port : " + PORT);
 });
