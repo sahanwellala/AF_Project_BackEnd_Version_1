@@ -32,6 +32,12 @@ module.exports = (app) => {
         })
     });
 
+    app.get('/courses/approvedCourses', (req, res) => {
+        Course.find({isApproved: true}).exec().then(course => {
+            res.json(course)
+        })
+    });
+
     app.get('/courses/:name', (req, res) => {
         Course.find({name: req.params.name}).populate('instructor', {
             fName: 1,

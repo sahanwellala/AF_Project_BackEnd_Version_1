@@ -33,8 +33,8 @@ require('./routes/api/getUserData')(app);
 require('./routes/api/mailSender')(app);
 require('./routes/api/CourseRoutes')(app);
 require('./routes/api/NoticeRoutes')(app);
-
-
+require('./routes/api/assignmentRoutes')(app);
+require('./routes/api/examRoutes')(app);
 app.listen(PORT, function () {
     console.log("Server is Running on Port : " + PORT);
 });

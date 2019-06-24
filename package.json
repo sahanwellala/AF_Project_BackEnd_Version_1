@@ -9,6 +9,7 @@
   "author": "Sahan",
   "license": "ISC",
   "dependencies": {
+    "all": "0.0.0",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
